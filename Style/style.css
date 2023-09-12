@@ -1,0 +1,399 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+    scroll-padding-top: 50px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-color: #010718;
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    overflow: hidden;
+}
+
+.bg-hero{
+    position: absolute;
+    right: 0;
+    bottom: o;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .bg-hero{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .bg-hero{
+        width: auto;
+        height: 100%;
+    }
+}
+
+nav{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 5;
+    background-color: #010718;
+}
+
+nav .logo{
+    /* width: 80px; */
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1.5em;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.4em;
+}
+
+.toggle-button{
+    position: absolute;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    display: none;
+}
+/*END OF NAVBAR*/
+
+.content-home{
+    text-align: center;
+}
+
+.content-home h1{
+    font-size: 3em;
+    color: #fff;
+    font-weight: 600;
+}
+
+.content-home .text{
+    position: relative;
+    color: aqua;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.content-home .text.first-text{
+    color: #fff;
+}
+
+.typed-cursor {
+    font-size: 2em;
+    color: #4070f4;
+}
+
+/* STYLING FOR PAGE ABOUT */
+#about{
+    width: 100%;
+    height: 100vh;
+    background-color: #010718;
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    overflow: hidden;
+}
+
+#about h1.title{
+    position: absolute;
+    top: 35px;
+    color: #fff;
+}
+
+.text-desk{
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.profile-pict{
+    width: 300px;
+    /* height: 55vh; */
+    /* position: absolute; */
+    border-radius: 100%;
+}
+
+.profile {
+    position: relative;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    /* gap: 5rem; */
+
+    /* margin-inline: 2rem; */
+    /* background-color: red; */
+    max-width: fit-content;
+    height: 600px;
+}
+
+
+.about-stats{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    font-size: x-large;
+    
+}
+
+.about-stats {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    text-align: center;
+    margin-top: 4rem;
+  }
+  
+  .about-stats-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+  }
+  
+.about-stats-item h1{
+    color: #ffffff;
+}
+
+  .about-stats-item div {
+    width: 55px;
+    height: 10px;
+    background-color: #ffc108;
+    margin-bottom: 16px;
+  }
+
+  .text-stats{
+    margin-top: 5rem;
+  }
+
+/* END STYLING ABOUT */
+
+
+/* STTYLING SERVICE */
+#service{
+    width: 100%;
+    height: 100vh;
+    background-color: #010718;
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    overflow: hidden;
+}
+
+#service h1.service-title{
+    position: absolute;
+    top: 35px;
+    color: #fff;
+}
+
+.service-content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 5px;
+}
+
+.service-content-item{
+    color: #fff;
+    margin: 5px;
+}
+/* .content-desc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+} */
+/* STYLING FORM CONTACT */
+#contact{
+    width: 100%;
+    height: 100vh;
+    background-color: #010718;
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    overflow: hidden;
+}
+
+#contact h1.contact-title{
+    position: absolute;
+    top: 35px;
+    color: #fff;
+}
+
+form{
+    width: 90%;
+    max-width: 600px;
+}
+
+.input-group{
+    margin-bottom: 30px;
+    position: relative;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #ffffff;
+    background: transparent;
+    font-size: 15px;
+    color: #fff;
+}
+
+label{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: #ffffff;
+    cursor: text;
+    transition:  0.4s;
+}
+
+button{
+    padding: 10px 0;
+    outline: none;
+    background: transparent;
+    border: 1px solid #ffffff;
+    width: 100%;
+    cursor: pointer;
+    color: #fff;
+}
+
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label{
+    top: -35px;
+    font-size: 0.8rem;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row .input-group{
+    flex-basis: 48%;
+}
+
+/* STYLING FOOTER */
+ .footer{
+    background-color: #001244;
+ }
+
+ .footer-container{
+    width: 100%;
+    padding: 70px 30px 20px;
+ }
+
+ .social-icons{
+    display: flex;
+    justify-content: center;
+ }
+
+.social-icons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.social-icons a i{
+    font-size: 2em;
+    color: #010718;
+    opacity: 0.9;
+}
+
+/* Soacial icon hover */
+.social-icons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+
+.footer-nav{
+    margin: 30px 0;
+}
+
+.footer-nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-nav ul li a{
+    
+    color: #fff;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footer-nav ul li a:hover{
+    opacity: 1;
+
+}
+
+.footer-bottom{
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-bottom p{
+    color: #fff;
+}
+
+.designer{
+    opacity: 0.7;
+    transform: uppercase ;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
